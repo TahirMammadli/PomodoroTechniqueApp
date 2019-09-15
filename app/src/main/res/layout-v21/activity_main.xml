@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/start_button"
+        android:text="GO!"
+        android:textSize="50sp" />
+
+        <Button
+        android:id="@+id/breakBtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/break_button"
+        android:text="GO!"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pause_button"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/resumeBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/resume_button"
+        android:enabled="false"
+        android:text="Resume"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/reset_button"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/timer_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="60dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/break_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="@string/break_button_text"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/start_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/breakBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="@string/start_button_text"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
